@@ -1,4 +1,4 @@
-import { Scissors, Droplets, Package, Wrench, BookOpen } from "lucide-react";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -10,35 +10,30 @@ import Footer from "@/components/Footer";
 
 const services = [
   {
-    icon: Scissors,
     title: "Mounting",
     desc: "Our core service - from shoulder mounts to full custom builds. Each piece is crafted with museum-quality precision by our skilled artisans, preserving every detail of your trophy for a lifetime.",
     href: "/mounts",
     external: false,
   },
   {
-    icon: Droplets,
     title: "Tanning",
     desc: "Professional skin preparation and tanning using industry-leading techniques. We ensure every hide is treated to the highest standard for durability and a natural, supple finish.",
     href: "/services/tanning",
     external: false,
   },
   {
-    icon: Package,
     title: "Dip & Pack",
     desc: "Chemical treatment and professional packing services for safe export of your trophies. We handle all dipping requirements to meet international import standards.",
     href: "/services/dip-pack",
     external: false,
   },
   {
-    icon: BookOpen,
     title: "Leatherworks",
     desc: "Premium bespoke leather goods handcrafted to complement your trophies and lifestyle. From custom leather panels to decorative pieces, every item is made with care and precision.",
     href: "/services/leatherworks",
     external: false,
   },
   {
-    icon: Wrench,
     title: "Woodworking",
     desc: "Handcrafted woodwork to mount, frame, and showcase your trophies. Custom shields, plaques, habitat bases and display furniture, built to the highest standard.",
     href: "/services/woodworking",
@@ -94,9 +89,7 @@ const Services = () => {
                       whileHover={{ y: -6, transition: { duration: 0.3 } }}
                       className="bg-card border border-border rounded-xl p-8 h-full flex flex-col group hover:border-gray-medium transition-all duration-500 cursor-pointer"
                     >
-                      <div className="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <svc.icon className="w-6 h-6 text-foreground" />
-                      </div>
+
                       <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">{svc.title}</h3>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1">{svc.desc}</p>
                     </motion.div>
@@ -107,9 +100,7 @@ const Services = () => {
                       whileHover={{ y: -6, transition: { duration: 0.3 } }}
                       className="bg-card border border-border rounded-xl p-8 h-full flex flex-col group hover:border-gray-medium transition-all duration-500 cursor-pointer"
                     >
-                      <div className="w-12 h-12 bg-gray-dark rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <svc.icon className="w-6 h-6 text-foreground" />
-                      </div>
+
                       <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">{svc.title}</h3>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1">{svc.desc}</p>
                     </motion.div>

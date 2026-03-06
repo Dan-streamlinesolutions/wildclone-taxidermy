@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 
 
-const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image: string; galleryImages?: string[] }> = {
+const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image: string; galleryImages?: string[]; customGallery?: string[] }> = {
   "professional-communication": {
     title: "Professional Communication",
     subtitle: "Keeping you informed at every stage",
@@ -111,6 +111,13 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
       "/images/placeholder_image.png",
     ],
+    customGallery: [
+      "/images/tanning_process_1.jpg",
+      "/images/tanning_process_2.png",
+      "/images/tanning_process_3.png",
+      "/images/tanning_process_4.jpg",
+      "/images/tanning_process_5.png",
+    ]
   },
   "dip-pack": {
     title: "Dip & Pack",
@@ -133,6 +140,10 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
       "/images/placeholder_image.png",
     ],
+    customGallery: [
+      "/images/dip1.jpg",
+      "/images/dip2.jpg",
+    ]
   },
   "leatherworks": {
     title: "Leatherworks",
@@ -155,6 +166,11 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
       "/images/placeholder_image.png",
     ],
+    customGallery: [
+      "/images/leatherworks_1.jpg",
+      "/images/leatherworks_2.jpg",
+      "/images/leatherworks_3.jpg",
+    ]
   },
   "woodworking": {
     title: "Woodworking",
@@ -177,6 +193,9 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
       "/images/placeholder_image.png",
     ],
+    customGallery: [
+      "/images/woodworking_1.jpg",
+    ]
   },
 };
 
@@ -256,6 +275,17 @@ const ServiceDetail = () => {
               )}
             </AnimatedSection>
           </div>
+
+          {/* Custom Gallery Rendering */}
+          {service.customGallery && service.customGallery.length > 0 && (
+            <div className="mt-12 flex flex-col gap-8">
+              {service.customGallery.map((src, i) => (
+                <AnimatedSection key={i} delay={i * 0.1} scale>
+                  <img src={src} className="w-full h-auto rounded-xl object-contain border border-border" alt={`${service.title} custom gallery image ${i + 1}`} />
+                </AnimatedSection>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
