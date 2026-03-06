@@ -75,9 +75,14 @@ const Services = () => {
       {/* Services Grid */}
       <section className="pb-24 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {services.map((svc, i) => (
-              <AnimatedSection key={svc.title} delay={i * 0.1} scale>
+              <AnimatedSection
+                key={svc.title}
+                delay={i * 0.1}
+                scale
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333333%-1rem)]"
+              >
                 {svc.external ? (
                   <a
                     href={svc.href}
