@@ -17,10 +17,10 @@ const Footer = () => {
           {/* Pages */}
           <div className="text-center justify-self-center">
             <h4 className="font-heading text-lg font-semibold text-foreground mb-6">Pages</h4>
-            {["Home", "About", "Mounting Direction", "Gallery", "Services", "Contact"].map((item) => (
+            {["Home", "About", "Mounting", "Mounting Direction", "Gallery", "Services", "Contact"].map((item) => (
               <Link
                 key={item}
-                to={item === "Home" ? "/" : item === "Mounting Direction" ? "/mounts" : `/${item.toLowerCase()}`}
+                to={item === "Home" ? "/" : item === "Mounting Direction" ? "/mounting-direction" : `/${item.toLowerCase()}`}
                 className="block font-body text-sm text-gray-light hover:text-foreground transition-colors mb-3"
               >
                 {item}
@@ -37,22 +37,20 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <h4 className="font-heading text-lg font-semibold text-foreground mb-6">Subscribe to our newsletter!</h4>
-              <div className="flex max-w-xs">
-                <input
-                  type="email"
-                  placeholder="Enter Your Email...."
-                  className="min-w-0 flex-1 bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-gray-medium focus:outline-none focus:border-gray-light rounded-l"
-                />
-                <button className="bg-foreground text-background font-body text-sm px-6 py-3 hover:bg-foreground/90 rounded-r transition-colors whitespace-nowrap">
-                  Subscribe
-                </button>
-              </div>
+          <div className="flex flex-col">
+            <h4 className="font-heading text-lg font-semibold text-foreground mb-6">Subscribe to our newsletter!</h4>
+            <div className="flex max-w-xs mb-6">
+              <input
+                type="email"
+                placeholder="Enter Your Email...."
+                className="min-w-0 flex-1 bg-background border border-border px-4 py-3 font-body text-sm text-foreground placeholder:text-gray-medium focus:outline-none focus:border-gray-light rounded-l"
+              />
+              <button className="bg-foreground text-background font-body text-sm px-6 py-3 hover:bg-foreground/90 rounded-r transition-colors whitespace-nowrap">
+                Subscribe
+              </button>
             </div>
-            
-            <Link to="/fulfilment-policy" className="mt-8 font-body text-sm text-gray-light hover:text-foreground transition-colors underline decoration-border hover:decoration-gray-medium underline-offset-4 w-fit">
+
+            <Link to="/fulfilment-policy" className="font-body text-sm text-gray-light hover:text-foreground transition-colors underline decoration-border hover:decoration-gray-medium underline-offset-4 w-fit">
               Read our Fulfilment Policy
             </Link>
           </div>

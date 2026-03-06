@@ -102,9 +102,9 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Industry-leading tanning chemicals",
       "Rigorous skin preparation and cleaning",
       "Export-ready treatment process",
-      "Suitable for all species and hide types",
+      "Suitable for mounting or display skins",
     ],
-    image: "/images/029577_335b93f9a9d74912bd9e93f8a923b54fmv2.png",
+    image: "/images/tanning_service.jpg",
     galleryImages: [
       "/images/placeholder_image.png",
       "/images/placeholder_image.png",

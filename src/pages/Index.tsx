@@ -9,10 +9,10 @@ import Footer from "@/components/Footer";
 
 const whyCards = [
   {
-    title: "Professional Communication",
-    desc: "Real-time photo updates at every stage. You're kept informed from intake to delivery.",
-    href: "/services/professional-communication",
-    image: "/images/HH8GLs9hiwlxJTmnlCc9i0L2fXM-39ce814654dd8.png",
+    title: "12-Month\nDelivery",
+    desc: "We respect your investment. Our streamlined, high-capacity studio guarantees your finished trophies are ready within 12 months.",
+    image: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png",
+    href: "/services",
   },
   {
     title: "Expert Craftsmanship",
@@ -95,7 +95,7 @@ const Index = () => {
           >
             Preserve your trophy forever with craftsmanship, technology, and care.
             <br />
-            Trusted by hunters worldwide.
+            <span className="text-foreground font-semibold">Guaranteed 12-Month Delivery.</span> Trusted by hunters worldwide.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}

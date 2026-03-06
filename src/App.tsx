@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Mounts from "./pages/Mounts";
+import MountingDirection from "./pages/MountingDirection";
 import MountCategory from "./pages/MountCategory";
 import Gallery from "./pages/Gallery";
 import Services from "./pages/Services";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/mounts" element={<Mounts />} />
+          <Route path="/mounting-direction" element={<MountingDirection />} />
           <Route path="/mounts/:slug" element={<MountCategory />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/services" element={<Services />} />
