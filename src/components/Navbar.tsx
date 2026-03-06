@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className={`hidden lg:flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out w-max ${scrolled ? "gap-6" : "gap-14"}`}>
+          <div className={`hidden xl:flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out w-max ${scrolled ? "gap-6" : "gap-10 2xl:gap-14"}`}>
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -70,14 +70,14 @@ const Navbar = () => {
               href="https://portal.wildclone.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:inline-block font-body text-sm px-6 py-3 border border-foreground text-foreground hover:bg-foreground hover:text-background rounded transition-all duration-300"
+              className="hidden xl:inline-block font-body text-sm px-6 py-3 border border-foreground text-foreground hover:bg-foreground hover:text-background rounded transition-all duration-300"
             >
               Outfitters Portal
             </a>
 
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden text-foreground"
+              className="xl:hidden text-foreground hover:opacity-70 transition-opacity"
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" />
