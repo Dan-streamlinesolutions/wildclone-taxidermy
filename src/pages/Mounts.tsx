@@ -79,23 +79,21 @@ const Mounts = () => {
             {/* Grid */}
             <section className="py-24 bg-background">
                 <div className="container mx-auto px-6 lg:px-12">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {mountTypes.map((mount, i) => (
-                            <AnimatedSection key={mount.slug} delay={i * 0.1} scale>
-                                <Link to={`/mounts/${mount.slug}`}>
+                            <AnimatedSection
+                                key={mount.slug}
+                                delay={i * 0.1}
+                                scale
+                                className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333333%-1.333333rem)]"
+                            >
+                                <Link to={`/mounts/${mount.slug}`} className="block h-full">
                                     <motion.div
                                         whileHover={{ y: -6 }}
                                         transition={{ duration: 0.4 }}
-                                        className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-gray-medium transition-colors duration-500 flex flex-col h-full"
+                                        className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-gray-medium transition-colors duration-500 flex flex-col h-full p-8"
                                     >
-                                        <div className="aspect-[4/3] w-full bg-white p-6 flex items-center justify-center overflow-hidden border-b border-border">
-                                            <img
-                                                src={mount.image}
-                                                alt={mount.title}
-                                                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
-                                            />
-                                        </div>
-                                        <div className="p-8 flex-1 flex flex-col">
+                                        <div className="flex flex-col flex-1">
                                             <div className="flex items-center justify-between mb-4">
                                                 <h3 className="font-heading text-2xl font-semibold text-foreground">
                                                     {mount.title}
