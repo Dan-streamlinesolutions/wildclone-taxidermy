@@ -134,29 +134,52 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
     ],
   },
-  "wyldecraft-woodworking": {
-    title: "Wyldecraft & Woodworking",
-    subtitle: "Premium custom leather and wood goods",
+  "leatherworks": {
+    title: "Leatherworks",
+    subtitle: "Handcrafted leather goods for the outdoorsman",
     description: [
-      "Wyldecraft & Woodworking is our dedicated service for premium, handcrafted leather goods and bespoke wooden pieces, tailored to complement your lifestyle and showcase your passion for the outdoors.",
-      "Our skilled artisans craft everything from custom leather belts, slings, and holsters, to beautifully finished wooden bases, plaques, and custom furniture pieces.",
-      "Each item is meticulously crafted using high-quality materials and traditional techniques, ensuring durability, functionality, and timeless aesthetic appeal.",
+      "Our Leatherworks service offers premium, bespoke leather goods handcrafted by skilled artisans. Every piece is made to order, tailored to your specifications, and built to last a lifetime.",
+      "From custom slings and rifle belts to decorative leather panels and display accessories, we craft leather goods that complement your trophies and reflect your passion for the outdoors.",
+      "We use only the finest hides and traditional leatherworking techniques to ensure every item has the quality, character, and durability that the Wild Clone name stands for.",
     ],
     highlights: [
-      "Custom leatherworking for slings, belts, and accessories",
-      "Bespoke woodworking for plaques, bases, and displays",
-      "Premium materials and traditional craftsmanship",
-      "Personalized design to match your style",
+      "Custom slings, belts, and accessories",
+      "Decorative leather panels and display pieces",
+      "Finest quality hides and materials",
+      "Made-to-order, personalised service",
     ],
-    image: "https://images.unsplash.com/photo-1554825959-e9a6670d4f18?auto=format&fit=crop&q=80&w=1600",
+    image: "/images/placeholder_image.png",
     galleryImages: [
-      "https://images.unsplash.com/photo-1556551999-7efff4f05f19?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1602161246032-c43167bbc1d5?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1609215772603-67a580d6a990?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1629958317491-bd40c9fa757e?auto=format&fit=crop&q=80&w=1000",
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
+    ],
+  },
+  "woodworking": {
+    title: "Woodworking",
+    subtitle: "Custom woodcraft to showcase your trophies",
+    description: [
+      "Our Woodworking service produces handcrafted wooden pieces designed to complement and display your trophies. Every item is built to order by our skilled craftsmen using the finest local and imported timbers.",
+      "From custom trophy shields and plaques to full habitat bases, display furniture, and bespoke wooden frames, we create pieces that elevate your mount from a trophy into a centrepiece.",
+      "Each piece is finished to museum standards, with attention to grain, texture, and detail that sets Wild Clone woodwork apart from mass-produced alternatives.",
+    ],
+    highlights: [
+      "Custom trophy shields and mounting plaques",
+      "Handcrafted habitat bases for mounts",
+      "Display furniture and bespoke frames",
+      "Museum-quality finish using premium timbers",
+    ],
+    image: "/images/placeholder_image.png",
+    galleryImages: [
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
+      "/images/placeholder_image.png",
     ],
   },
 };
+
 
 
 const ServiceDetail = () => {
@@ -296,31 +319,31 @@ const ServiceDetail = () => {
                       <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">800 x 550 x 550mm</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 780</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 730</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>2x Flat / Back Skins</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />2x Flat / Back Skins</td>
                     </tr>
                     <tr className="hover:bg-gray-dark/20 transition-colors">
                       <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 800mm</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1950</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1800</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>4x Flat / Back Skins<br/>2x Shoulder Mounts</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />4x Flat / Back Skins<br />2x Shoulder Mounts</td>
                     </tr>
                     <tr className="hover:bg-gray-dark/20 transition-colors">
                       <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1100mm</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2600</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2200</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>6x Flat / Back Skins<br/>4x Shoulder Mounts</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />6x Flat / Back Skins<br />4x Shoulder Mounts</td>
                     </tr>
                     <tr className="hover:bg-gray-dark/20 transition-colors">
                       <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1600mm</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 3450</td>
                       <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2800</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">6x European Mounts<br/>8x Flat / Back Skins<br/>6x Shoulder Mounts</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">6x European Mounts<br />8x Flat / Back Skins<br />6x Shoulder Mounts</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </AnimatedSection>
-            
+
             <AnimatedSection delay={0.2}>
               <div className="mt-8 bg-gray-dark border border-border rounded-xl p-6 lg:p-8">
                 <h4 className="font-heading text-lg font-semibold text-foreground mb-4">Excluded in above crate prices per hunter:</h4>
@@ -349,7 +372,7 @@ const ServiceDetail = () => {
                 <p className="font-body text-sm text-muted-foreground max-w-2xl mx-auto">Explore our premium bespoke furniture and leather offerings, hand-crafted to celebrate the beauty of nature.</p>
               </div>
             </AnimatedSection>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Poker Tables */}
               <AnimatedSection delay={0.1}>
@@ -364,7 +387,7 @@ const ServiceDetail = () => {
                     <p className="mt-4 text-xs tracking-wide">Using a flat skin of your choice, this bespoke piece is fully customizable with various options for legs, wood stains and leather finishes.</p>
                   </div>
                   <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
-                     <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                    <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
                   </div>
                 </div>
               </AnimatedSection>
@@ -384,7 +407,7 @@ const ServiceDetail = () => {
                     </div>
                   </div>
                   <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
-                     <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                    <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
                   </div>
                 </div>
               </AnimatedSection>

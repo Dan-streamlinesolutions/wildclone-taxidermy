@@ -1,4 +1,4 @@
-import { Scissors, Droplets, Package, Globe, Monitor, Paintbrush } from "lucide-react";
+import { Scissors, Droplets, Package, Wrench, BookOpen } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -31,24 +31,17 @@ const services = [
     external: false,
   },
   {
-    icon: Globe,
-    title: "Global Shipping",
-    desc: "Worldwide delivery with full CITES documentation, custom crating, and export compliance. We ship to hunters across the globe with care and precision.",
-    href: "/services/global-shipping",
+    icon: BookOpen,
+    title: "Leatherworks",
+    desc: "Premium bespoke leather goods handcrafted to complement your trophies and lifestyle. From custom leather panels to decorative pieces, every item is made with care and precision.",
+    href: "/services/leatherworks",
     external: false,
   },
   {
-    icon: Monitor,
-    title: "Professional Communication",
-    desc: "Real-time photo updates at every stage. You're kept informed from intake to delivery via our dedicated outfitter portal.",
-    href: "/services/professional-communication",
-    external: false,
-  },
-  {
-    icon: Paintbrush,
-    title: "Wyldecraft & Woodworking",
-    desc: "Bespoke leatherworking and woodworking services. We craft premium, custom leather goods and handcrafted wood pieces to complement your lifestyle and your trophies.",
-    href: "/services/wyldecraft-woodworking",
+    icon: Wrench,
+    title: "Woodworking",
+    desc: "Handcrafted woodwork to mount, frame, and showcase your trophies. Custom shields, plaques, habitat bases and display furniture, built to the highest standard.",
+    href: "/services/woodworking",
     external: false,
   },
 ];
