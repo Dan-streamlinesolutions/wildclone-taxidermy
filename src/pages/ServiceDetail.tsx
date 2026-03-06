@@ -256,37 +256,6 @@ const ServiceDetail = () => {
               )}
             </AnimatedSection>
           </div>
-
-          {/* Service Photos Gallery inline */}
-          {service.galleryImages && service.galleryImages.length > 0 && (
-            <div className="mt-8 border-t border-border/40 pt-16">
-              <AnimatedSection>
-                <div className="text-center mb-12">
-                  <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    {slug === "global-shipping" ? "Custom Crating & Packing" : "Gallery"}
-                  </h2>
-                  <p className="font-body text-sm text-muted-foreground max-w-xl mx-auto">
-                    {slug === "global-shipping"
-                      ? "Every mount is carefully packed in custom-built crates, engineered to protect your trophy through international transit."
-                      : "A closer look at our process and commitment to quality."}
-                  </p>
-                </div>
-              </AnimatedSection>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                {service.galleryImages.map((src, i) => (
-                  <AnimatedSection key={i} delay={i * 0.1} scale>
-                    <motion.div
-                      whileHover={{ scale: 1.02 }}
-                      transition={{ duration: 0.4 }}
-                      className="aspect-square border border-border rounded-xl overflow-hidden"
-                    >
-                      <img src={src} alt={`${service.title} gallery format ${i + 1}`} className="w-full h-full object-cover" />
-                    </motion.div>
-                  </AnimatedSection>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </section>
 
