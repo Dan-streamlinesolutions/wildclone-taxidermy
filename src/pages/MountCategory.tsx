@@ -106,7 +106,7 @@ const mountData: Record<string, MountData> = {
   },
   "half-mounts": {
     title: "Half Mounts",
-    subtitle: "Where shoulder meets full — maximum impact, minimal space.",
+    subtitle: "Where shoulder meets full - maximum impact, minimal space.",
     description: [
       "Half mounts extend the animal from head to mid-body, creating the illusion of the animal emerging through the wall. They deliver more presence than a shoulder mount while fitting spaces where a full mount isn't feasible.",
       "This style is especially popular for dangerous game and larger species where the chest and forelegs add dramatic visual weight.",

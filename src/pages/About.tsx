@@ -49,6 +49,7 @@ const About = () => {
           {/* Text */}
           <AnimatedSection direction="left">
             <div className="font-body text-sm text-muted-foreground leading-relaxed space-y-4 max-w-4xl mx-auto mb-16">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Our Story</h2>
               <p>Wild Clone Taxidermy has created a close-knit family of artisans passionate about recreating the extraordinary animals our wonderful clients entrust us with. We have made some big investments to ensure that we can process everything in-house and future-proof the business.</p>
               <p>Our investments include a new 14,000 square feet facility in Port Elizabeth and two Treatment and Prep facilities to enable our clients easy access. This expands our facilities to 4 branches, located in Port Elizabeth, North West, Free State, and Limpopo.</p>
               <p>By expanding our business we boost <strong className="text-foreground">Local Entrepreneurship</strong>, our facilities provide local artisans with access to high-quality materials from our tanneries, and this support helps them craft products destined for both local and international markets.</p>

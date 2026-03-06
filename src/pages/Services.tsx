@@ -12,7 +12,7 @@ const services = [
   {
     icon: Scissors,
     title: "Mounting",
-    desc: "Our core service — from shoulder mounts to full custom builds. Each piece is crafted with museum-quality precision by our skilled artisans, preserving every detail of your trophy for a lifetime.",
+    desc: "Our core service - from shoulder mounts to full custom builds. Each piece is crafted with museum-quality precision by our skilled artisans, preserving every detail of your trophy for a lifetime.",
     href: "/mounts",
     external: false,
   },
@@ -46,9 +46,9 @@ const services = [
   },
   {
     icon: Paintbrush,
-    title: "Wild Craft",
-    desc: "Custom artistic taxidermy work — bringing creative vision to life with bespoke habitat bases, artistic poses, and unique finishing options that make your trophy truly one of a kind.",
-    href: "/services/wild-craft",
+    title: "Wyldecraft & Woodworking",
+    desc: "Bespoke leatherworking and woodworking services. We craft premium, custom leather goods and handcrafted wood pieces to complement your lifestyle and your trophies.",
+    href: "/services/wyldecraft-woodworking",
     external: false,
   },
 ];
@@ -73,7 +73,7 @@ const Services = () => {
               Services
             </h2>
             <p className="font-body text-sm text-muted-foreground max-w-lg mx-auto">
-              Comprehensive taxidermy and export services, from mounting to global shipping — all handled with precision and care.
+              Comprehensive taxidermy and export services, from mounting to global shipping - all handled with precision and care.
             </p>
           </AnimatedSection>
         </motion.div>

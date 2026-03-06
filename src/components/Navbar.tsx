@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Mounting Direction", path: "/mounts" },
   { label: "Gallery", path: "/gallery" },
   { label: "Services", path: "/services" },
+  { label: "Blog", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];
 

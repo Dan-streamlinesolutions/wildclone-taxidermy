@@ -5,24 +5,14 @@ import CTABanner from "@/components/CTABanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const policyItems = [
-  "It is the responsibility of the client to ensure that trophies are subjected to field preparation to acceptable standards.",
-  "All Taxidermy work requires a 50% deposit before any work will commence, and the balance is due on completion of the trophies, before collection or shipping.",
-  "Please note that no items will be exchanged or refunded. All goods not collected or final payment received, 3 months after completion will be sold to recoup costs.",
-  "All goods remain the property of Wild Clone Taxidermy until fully paid. Wild Clone Taxidermy shall be entitled to sell such goods to cover the outstanding amount owed.",
-  "Prices do not include VAT, Packaging, Transport, Admin, Documentation Fees & Crating, neither delivery nor postage.",
-  "Work done is at the owner's risk. We are not responsible for any loss or damage to goods due to power or refrigeration failure, fire, strike, theft or act of God.",
-  "Although great care is taken, we indemnify ourselves against hair slip and bacterial defects or damage which may occur.",
-  "Products will be completed within 12 months from deposit payment received.",
-  "Products will either be shipped via ocean or air, although great care is taken when preparing trophies for shipping, Wild Clone Taxidermy is not responsible for damage caused by freight forwarders or last-mile logistics providers.",
-];
+
 
 const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image: string; galleryImages?: string[] }> = {
   "professional-communication": {
     title: "Professional Communication",
     subtitle: "Keeping you informed at every stage",
     description: [
-      "At Wild Clone, communication is at the heart of everything we do. We believe that every client deserves to be kept informed throughout the entire taxidermy process — from the moment your trophy arrives at our facility to the day it's shipped to your door.",
+      "At Wild Clone, communication is at the heart of everything we do. We believe that every client deserves to be kept informed throughout the entire taxidermy process - from the moment your trophy arrives at our facility to the day it's shipped to your door.",
       "Our team provides real-time photo updates at every stage of the mounting process. You'll see your trophy as it progresses through preparation, sculpting, finishing, and final quality assurance.",
       "We use modern digital communication tools to ensure you're never left wondering about the status of your order. Whether you're across the country or across the globe, you're always connected to your trophy's journey.",
     ],
@@ -83,7 +73,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     subtitle: "12 months. No exceptions.",
     description: [
       "We are committed to delivering your mount within 12 months of intake. No exceptions. This guarantee reflects our confidence in our team, our processes, and our capacity to deliver on time, every time.",
-      "Our streamlined workflow across four branches — Port Elizabeth, North West, Free State, and Limpopo — ensures efficient processing from intake through to final delivery.",
+      "Our streamlined workflow across four branches - Port Elizabeth, North West, Free State, and Limpopo - ensures efficient processing from intake through to final delivery.",
       "We understand that waiting for your trophy is part of the anticipation, but we also know that timely delivery matters. That's why we've invested in facilities, training, and processes to honour our 12-month commitment.",
     ],
     highlights: [
@@ -105,7 +95,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     subtitle: "Professional skin preparation & tanning",
     description: [
       "Our professional tanning service ensures every hide is treated to the highest standard for durability, suppleness, and a natural finish. We use industry-leading techniques and chemicals to preserve your trophy's skin to museum quality.",
-      "All skins are thoroughly cleaned, salted, and processed through our rigorous preparation pipeline before tanning. This ensures the best possible end result — whether for mounting or as a standalone skin display.",
+      "All skins are thoroughly cleaned, salted, and processed through our rigorous preparation pipeline before tanning. This ensures the best possible end result - whether for mounting or as a standalone skin display.",
       "Our tanning process is designed to meet international export standards, making your trophies ready for shipping anywhere in the world with confidence.",
     ],
     highlights: [
@@ -128,7 +118,7 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     description: [
       "Our taxidermy facility is veterinary approved, so should you wish to have your taxidermy processed at home or at a later stage, we offer a professional Dip & Pack service. Once raw trophies are received at our facility, skins are treated, dried, and cleaned to ensure your trophy arrives in the best possible condition.",
       "Dip & Pack is the sterilising process necessary to export any raw animal part across international borders. It involves the removal of all flesh and tissue from skulls, horns, and bones, and the drying and bleaching of skulls and bones.",
-      "Skins are dried, cleaned, and treated with anti-bacterial powders to ensure that your trophy animal arrives in a dry and pest-free condition — compliant with all international import regulations.",
+      "Skins are dried, cleaned, and treated with anti-bacterial powders to ensure that your trophy animal arrives in a dry and pest-free condition - compliant with all international import regulations.",
     ],
     highlights: [
       "Veterinary-approved facility",
@@ -144,26 +134,26 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/placeholder_image.png",
     ],
   },
-  "wild-craft": {
-    title: "Wild Craft",
-    subtitle: "Where art meets the wild",
+  "wyldecraft-woodworking": {
+    title: "Wyldecraft & Woodworking",
+    subtitle: "Premium custom leather and wood goods",
     description: [
-      "Wild Craft is our bespoke artistic taxidermy service — for clients who want something truly extraordinary. We combine traditional craftsmanship with creative vision to produce one-of-a-kind pieces that become centrepieces in any room.",
-      "From custom habitat bases and dioramas to rare and unusual species, our team works closely with you to design a mount that reflects your personal story and the unique character of your trophy.",
-      "Every Wild Craft piece is handcrafted from scratch, with no two mounts ever the same. We take on a limited number of Wild Craft commissions per year, ensuring each piece receives the full attention and care it deserves.",
+      "Wyldecraft & Woodworking is our dedicated service for premium, handcrafted leather goods and bespoke wooden pieces, tailored to complement your lifestyle and showcase your passion for the outdoors.",
+      "Our skilled artisans craft everything from custom leather belts, slings, and holsters, to beautifully finished wooden bases, plaques, and custom furniture pieces.",
+      "Each item is meticulously crafted using high-quality materials and traditional techniques, ensuring durability, functionality, and timeless aesthetic appeal.",
     ],
     highlights: [
-      "Bespoke custom habitat bases & dioramas",
-      "Artistic pose design & sculpting",
-      "Rare & unusual species welcome",
-      "Limited commissions — personalised service",
+      "Custom leatherworking for slings, belts, and accessories",
+      "Bespoke woodworking for plaques, bases, and displays",
+      "Premium materials and traditional craftsmanship",
+      "Personalized design to match your style",
     ],
-    image: "/images/placeholder_image.png",
+    image: "https://images.unsplash.com/photo-1554825959-e9a6670d4f18?auto=format&fit=crop&q=80&w=1600",
     galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
+      "https://images.unsplash.com/photo-1556551999-7efff4f05f19?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1602161246032-c43167bbc1d5?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1609215772603-67a580d6a990?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1629958317491-bd40c9fa757e?auto=format&fit=crop&q=80&w=1000",
     ],
   },
 };
@@ -250,7 +240,7 @@ const ServiceDetail = () => {
               <AnimatedSection>
                 <div className="text-center mb-12">
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                    {slug === "global-shipping" ? "Custom Crating & Packing" : "Service Gallery"}
+                    {slug === "global-shipping" ? "Custom Crating & Packing" : "Gallery"}
                   </h2>
                   <p className="font-body text-sm text-muted-foreground max-w-xl mx-auto">
                     {slug === "global-shipping"
@@ -277,23 +267,128 @@ const ServiceDetail = () => {
         </div>
       </section>
 
-      {/* Fulfilment Policy (global shipping only) */}
+
+
+      {/* Global Shipping Crate Pricing */}
       {slug === "global-shipping" && (
-        <section className="pt-16 pb-24 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+        <section className="pt-16 pb-24 lg:pb-32 bg-background border-t border-border/40">
+          <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
             <AnimatedSection>
-              <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 max-w-4xl mx-auto hover:border-gray-medium transition-colors duration-500">
-                <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8">Fulfilment Policy</h2>
-                <ul className="space-y-5">
-                  {policyItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-4">
-                      <span className="font-heading text-xs text-gray-medium mt-0.5 shrink-0 w-5 text-right">{i + 1}.</span>
-                      <p className="font-body text-sm text-muted-foreground leading-relaxed">{item}</p>
-                    </li>
-                  ))}
-                </ul>
+              <div className="text-center mb-16">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Crate Sizing & Pricing</h2>
+                <p className="font-body text-sm text-muted-foreground max-w-2xl mx-auto">Simple. Secure. Stress Free. Typical export rates for USA, Canada, UK, and Europe.</p>
               </div>
             </AnimatedSection>
+
+            <AnimatedSection delay={0.1}>
+              <div className="overflow-x-auto bg-card border border-border rounded-xl">
+                <table className="w-full text-left border-collapse min-w-[800px]">
+                  <thead>
+                    <tr className="border-b border-border bg-gray-dark/50">
+                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">Crate Size</th>
+                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">USA & Canada</th>
+                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">UK & Europe</th>
+                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">Typical Content</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    <tr className="hover:bg-gray-dark/20 transition-colors">
+                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">800 x 550 x 550mm</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 780</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 730</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>2x Flat / Back Skins</td>
+                    </tr>
+                    <tr className="hover:bg-gray-dark/20 transition-colors">
+                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 800mm</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1950</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1800</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>4x Flat / Back Skins<br/>2x Shoulder Mounts</td>
+                    </tr>
+                    <tr className="hover:bg-gray-dark/20 transition-colors">
+                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1100mm</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2600</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2200</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br/>6x Flat / Back Skins<br/>4x Shoulder Mounts</td>
+                    </tr>
+                    <tr className="hover:bg-gray-dark/20 transition-colors">
+                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1600mm</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 3450</td>
+                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2800</td>
+                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">6x European Mounts<br/>8x Flat / Back Skins<br/>6x Shoulder Mounts</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </AnimatedSection>
+            
+            <AnimatedSection delay={0.2}>
+              <div className="mt-8 bg-gray-dark border border-border rounded-xl p-6 lg:p-8">
+                <h4 className="font-heading text-lg font-semibold text-foreground mb-4">Excluded in above crate prices per hunter:</h4>
+                <ul className="space-y-3 font-body text-sm text-gray-light">
+                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">Power of Attorney</span> <span className="text-foreground">$ 125</span></li>
+                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">Destination Bond and ISF Filing</span> <span className="text-foreground">$ 195</span></li>
+                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">CITES Inspections</span> <span className="text-foreground">$ 120</span></li>
+                </ul>
+                <div className="mt-6 pt-6 border-t border-border/50 text-xs text-muted-foreground space-y-2">
+                  <p>* Taxes on import goods if applicable - Hunting trophies excluded from tax in USA.</p>
+                  <p>* Delivery to Door - Clients need to arrange last mile delivery from our warehouse to their premises.</p>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
+
+      {/* Wyldecraft Catalog */}
+      {slug === "wyldecraft-woodworking" && (
+        <section className="pt-16 pb-24 lg:pb-32 bg-background border-t border-border/40">
+          <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+            <AnimatedSection>
+              <div className="text-center mb-16">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Featured Products</h2>
+                <p className="font-body text-sm text-muted-foreground max-w-2xl mx-auto">Explore our premium bespoke furniture and leather offerings, hand-crafted to celebrate the beauty of nature.</p>
+              </div>
+            </AnimatedSection>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Poker Tables */}
+              <AnimatedSection delay={0.1}>
+                <div className="bg-card border border-border rounded-xl p-8 hover:border-gray-medium transition-colors h-full flex flex-col">
+                  <h3 className="font-heading text-2xl font-bold text-foreground mb-2">The Lux Range Poker Tables</h3>
+                  <div className="text-gray-light font-body text-sm mb-6 flex-grow">
+                    <p className="mb-4">This height adjustable poker table doubles as a coffee table. Keep the cover on for everyday use, then lift it off and raise the height for instant game night.</p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Custom 8 Seater Poker Table (From $3300)</li>
+                      <li>• Custom 6 Seater Poker Table (From $3600)</li>
+                    </ul>
+                    <p className="mt-4 text-xs tracking-wide">Using a flat skin of your choice, this bespoke piece is fully customizable with various options for legs, wood stains and leather finishes.</p>
+                  </div>
+                  <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
+                     <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              {/* Auxiliary Tables */}
+              <AnimatedSection delay={0.2}>
+                <div className="bg-card border border-border rounded-xl p-8 hover:border-gray-medium transition-colors h-full flex flex-col">
+                  <h3 className="font-heading text-2xl font-bold text-foreground mb-2">Bespoke Tables</h3>
+                  <div className="text-gray-light font-body text-sm mb-6 flex-grow space-y-6 mt-4">
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1 text-base">Inner Horn Side Table ($400)</h4>
+                      <p className="text-muted-foreground">Featuring two distinctly unique components. A hand carved oak top with a beautiful texture resting on three polished kudu inner horns. This harmonious blend makes a one-of-a-kind piece.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1 text-base">Bedside Table ($500)</h4>
+                      <p className="text-muted-foreground">Have a left over backskin? Our oak bedside tables are adorned with your skins that would otherwise go unused. They are a true celebration of the beauty of nature.</p>
+                    </div>
+                  </div>
+                  <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
+                     <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
       )}

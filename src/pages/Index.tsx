@@ -105,12 +105,12 @@ const Index = () => {
           >
             <Link
               to="/contact"
-              className="font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground hover:border-foreground border border-foreground rounded transition-all duration-300 w-full sm:w-52 text-center"
+              className="font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300 w-full sm:w-52 text-center"
             >
               Get a Quote
             </Link>
             <Link
-              to="/mounts"
+              to="/gallery"
               className="font-body text-sm px-8 py-4 bg-transparent text-foreground border border-foreground rounded hover:bg-foreground hover:text-background transition-all duration-300 w-full sm:w-52 text-center"
             >
               View Our Mounts
@@ -196,39 +196,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gallery Teaser */}
-      <section className="py-24 lg:py-32 bg-background border-t border-border">
-        <div className="container mx-auto px-6 lg:px-12">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-                Our Best Works
-              </h2>
-              <p className="font-body text-sm text-muted-foreground max-w-2xl mx-auto mb-10">
-                A glimpse into some of the finest mounts produced by our team. Every piece tells a story of skill, precision, and respect for the wild.
-              </p>
-              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }} className="inline-block">
-                <Link
-                  to="/gallery"
-                  className="font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300"
-                >
-                  View Gallery
-                </Link>
-              </motion.div>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["/images/K33Pq9a36R5DDduBQ751wca4jk.png", "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png", "/images/vssE31UBI0lmPD0HAgfheuCQVio.png", "/images/vFw6cbMbJtpWT5dpzB2jWFup5fk.png"].map((src, i) => (
-              <AnimatedSection key={i} delay={i * 0.1} scale>
-                <motion.div whileHover={{ scale: 1.03 }} transition={{ duration: 0.4 }} className="aspect-square border border-border rounded-xl overflow-hidden">
-                  <img src={src} alt={`Gallery preview ${i + 1}`} className="w-full h-full object-cover" />
-                </motion.div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       <TestimonialsSection />
