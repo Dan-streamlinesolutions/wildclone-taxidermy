@@ -245,10 +245,10 @@ const ServiceDetail = () => {
 
           {/* Custom Gallery Rendering */}
           {service.customGallery && service.customGallery.length > 0 && (
-            <div className={`mt-12 ${["tanning", "dip-pack", "leatherworks", "global-shipping", "wyldecraft"].includes(slug || "") ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" : "flex flex-col gap-8"}`}>
+            <div className={`mt-12 ${slug === "wyldecraft" ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" : ["tanning", "dip-pack", "leatherworks", "global-shipping"].includes(slug || "") ? `grid grid-cols-1 sm:grid-cols-2 ${service.customGallery.length === 3 ? "lg:grid-cols-3" : service.customGallery.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-4"} gap-6` : "flex flex-col gap-8"}`}>
               {service.customGallery.map((src, i) => (
-                <AnimatedSection key={i} delay={i * 0.1} scale className="break-inside-avoid">
-                  <img src={src} className="w-full h-auto rounded-xl object-contain border border-border" alt={`${service.title} custom gallery image ${i + 1}`} />
+                <AnimatedSection key={i} delay={i * 0.1} scale className={slug === "wyldecraft" ? "break-inside-avoid" : "h-full"}>
+                  <img src={src} className={`w-full ${slug === "wyldecraft" ? "h-auto object-contain" : "h-full aspect-[4/3] object-cover"} rounded-xl border border-border`} alt={`${service.title} custom gallery image ${i + 1}`} />
                 </AnimatedSection>
               ))}
             </div>
