@@ -185,11 +185,11 @@ const MountCategory = () => {
       </section>
 
       {/* Hero Image */}
-      <section className="pb-16">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="pb-16 pt-8">
+        <div className="container mx-auto px-6 lg:px-12 flex justify-center">
           <AnimatedSection>
-            <div className="w-full aspect-[21/9] bg-white border border-border rounded-xl overflow-hidden p-8 lg:p-16 flex items-center justify-center">
-              <motion.img style={{ scale: heroScale }} src={data.images[0]} alt={data.title} className="w-full h-full object-contain origin-bottom saturate-100" />
+            <div className="w-full max-w-2xl aspect-[4/5] bg-black border border-border rounded-xl overflow-hidden p-8 flex items-center justify-center">
+              <motion.img style={{ scale: heroScale }} src={data.images[0]} alt={data.title} className="w-full h-full object-contain origin-center saturate-100" />
             </div>
           </AnimatedSection>
         </div>
@@ -254,8 +254,8 @@ const MountCategory = () => {
                     transition={{ duration: 0.3 }}
                     className="group bg-card border border-border rounded-xl overflow-hidden hover:border-gray-medium transition-colors duration-500"
                   >
-                    <div className="aspect-[16/10] overflow-hidden">
-                      <img src={mountData[s].images[0]} alt={mountData[s].title} className="w-full h-full object-cover" />
+                    <div className="aspect-[16/10] overflow-hidden bg-black p-4 flex items-center justify-center">
+                      <img src={mountData[s].images[0]} alt={mountData[s].title} className="w-full h-full object-contain" />
                     </div>
                     <div className="p-6 flex items-center justify-between">
                       <h3 className="font-heading text-lg font-semibold text-foreground">

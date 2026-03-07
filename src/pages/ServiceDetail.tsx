@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 
 
-const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image?: string; customGallery?: string[] }> = {
+const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image?: string; leftImage?: string; rightImage?: string; customGallery?: string[] }> = {
   "professional-communication": {
     title: "Professional Communication",
     subtitle: "Keeping you informed at every stage",
@@ -156,6 +156,8 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Display furniture and bespoke frames",
       "Museum-quality finish using premium timbers",
     ],
+    leftImage: "/images/wyldecraft/giraffe_table.png",
+    rightImage: "/images/wyldecraft/kudu_table.png",
     customGallery: [
       "/images/wyldecraft/6 Seater poker table.png",
       "/images/wyldecraft/6 seater poker table top cover.png",
@@ -166,8 +168,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/wyldecraft/Glass top coffee table 2.png",
       "/images/wyldecraft/Glass top coffee table.png",
       "/images/wyldecraft/Kudo horn side table.png",
-      "/images/wyldecraft/Mountain table 1.png",
-      "/images/wyldecraft/Mountain table 2.png",
       "/images/wyldecraft/Slatted shelf 1.png",
       "/images/wyldecraft/Slatted shelf 2.png",
     ]
@@ -239,9 +239,33 @@ const ServiceDetail = () => {
                 </div>
               </div>
 
-              {/* Removed individual image block to ensure tight gallery grouping */}
+              {slug === "professional-communication" && service.image && (
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                  className="mt-6 aspect-video border border-border rounded-xl overflow-hidden"
+                >
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                </motion.div>
+              )}
             </AnimatedSection>
           </div>
+
+          {/* Left / Right Hero Placements */}
+          {service.leftImage && service.rightImage && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <AnimatedSection direction="left">
+                <div className="aspect-[4/3] bg-black border border-border rounded-xl p-8 flex items-center justify-center">
+                  <img src={service.leftImage} alt={`${service.title} left feature`} className="w-full h-full object-contain" />
+                </div>
+              </AnimatedSection>
+              <AnimatedSection direction="right" delay={0.2}>
+                <div className="aspect-[4/3] bg-black border border-border rounded-xl p-8 flex items-center justify-center">
+                  <img src={service.rightImage} alt={`${service.title} right feature`} className="w-full h-full object-contain" />
+                </div>
+              </AnimatedSection>
+            </div>
+          )}
 
           {/* Custom Gallery Rendering */}
           {service.customGallery && service.customGallery.length > 0 && (

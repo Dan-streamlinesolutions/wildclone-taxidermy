@@ -6,22 +6,28 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const galleryImages = [
-    { src: "/images/K33Pq9a36R5DDduBQ751wca4jk.png", alt: "Springbok shoulder mount" },
-    { src: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png", alt: "European skull mount on shield" },
-    { src: "/images/vssE31UBI0lmPD0HAgfheuCQVio.png", alt: "Zebra Africa-shaped mount" },
-    { src: "/images/vFw6cbMbJtpWT5dpzB2jWFup5fk.png", alt: "African shield mount" },
-    { src: "/images/waterbuck_mount_nobg.png", alt: "Waterbuck full mount" },
-    { src: "/images/zebra_mount_nobg.png", alt: "Zebra shoulder mount" },
-    { src: "/images/kudu_mount_nobg.png", alt: "Kudu shoulder mount" },
-    { src: "/images/wildebeest_mount_nobg.png", alt: "Wildebeest shoulder mount" },
-    { src: "/images/impala_mount_nobg.png", alt: "Impala shoulder mount" },
-    { src: "/images/steenbok_mount_nobg.png", alt: "Steenbok shoulder mount" },
-    { src: "/images/sable_mount_nobg.png", alt: "Sable full mount" },
-    { src: "/images/dikdik_mount_nobg.png", alt: "Small antelope full mount" },
-    { src: "/images/giraffe_mount_nobg.png", alt: "Giraffe shoulder mount" },
-    { src: "/images/springbok_trio_mount_nobg.png", alt: "Springbok trio mount" },
-    { src: "/images/caracal_mount_nobg.png", alt: "Caracal full mount" },
-    { src: "/images/warthog_mount_nobg.png", alt: "Warthog shoulder mount" },
+    { src: "/images/gallery/1.png", alt: "Mount 1" },
+    { src: "/images/gallery/2.png", alt: "Mount 2" },
+    { src: "/images/gallery/3.png", alt: "Mount 3" },
+    { src: "/images/gallery/4.png", alt: "Mount 4" },
+    { src: "/images/gallery/5.png", alt: "Mount 5" },
+    { src: "/images/gallery/6.png", alt: "Mount 6" },
+    { src: "/images/gallery/7.png", alt: "Mount 7" },
+    { src: "/images/gallery/8.png", alt: "Mount 8" },
+    { src: "/images/gallery/9.png", alt: "Mount 9" },
+    { src: "/images/gallery/10.png", alt: "Mount 10" },
+    { src: "/images/gallery/11.png", alt: "Mount 11" },
+    { src: "/images/gallery/12.png", alt: "Mount 12" },
+    { src: "/images/gallery/13.png", alt: "Mount 13" },
+    { src: "/images/gallery/14.png", alt: "Mount 14" },
+    { src: "/images/gallery/15.png", alt: "Mount 15" },
+    { src: "/images/gallery/16.png", alt: "Mount 16" },
+    { src: "/images/gallery/17.png", alt: "Mount 17" },
+    { src: "/images/gallery/18.png", alt: "Mount 18" },
+    { src: "/images/gallery/19.png", alt: "Mount 19" },
+    { src: "/images/gallery/20.png", alt: "Mount 20" },
+    { src: "/images/gallery/21.png", alt: "Mount 21" },
+    { src: "/images/gallery/22.png", alt: "Mount 22" },
 
 ];
 
@@ -59,13 +65,13 @@ const Gallery = () => {
                                 <motion.div
                                     whileHover={{ scale: img.src ? 1.02 : 1 }}
                                     transition={{ duration: 0.4 }}
-                                    className="aspect-square border border-border rounded-xl overflow-hidden"
+                                    className="aspect-square bg-black border border-border rounded-xl flex items-center justify-center p-6 overflow-hidden"
                                 >
                                     {img.src ? (
                                         <img
                                             src={img.src}
                                             alt={img.alt}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
                                         />
                                     ) : (
                                         <div className="w-full h-full bg-gray-dark flex flex-col items-center justify-center gap-2">
