@@ -96,9 +96,9 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     ],
     image: "/images/tanning_service.jpg",
     customGallery: [
+      "/images/tanning_process_1.jpg",
+      "/images/tanning_process_2.png",
       "/images/tanning_process_3.png",
-      "/images/tanning_process_4.jpg",
-      "/images/tanning_process_5.png",
     ]
   },
   "dip-pack": {
@@ -138,6 +138,8 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     customGallery: [
       "/images/leatherworks_1.jpg",
       "/images/leatherworks_2.jpg",
+      "/images/leatherworx_gunbag1.png",
+      "/images/leatherworx_gunbag2.png",
     ]
   },
   "wyldecraft": {
@@ -163,8 +165,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "/images/wyldecraft/Bedside table.png",
       "/images/wyldecraft/Glass top coffee table 2.png",
       "/images/wyldecraft/Glass top coffee table.png",
-      "/images/wyldecraft/Gun bag 2.png",
-      "/images/wyldecraft/Gun bag.png",
       "/images/wyldecraft/Kudo horn side table.png",
       "/images/wyldecraft/Mountain table 1.png",
       "/images/wyldecraft/Mountain table 2.png",

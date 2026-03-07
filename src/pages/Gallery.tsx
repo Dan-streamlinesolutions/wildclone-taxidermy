@@ -22,11 +22,7 @@ const galleryImages = [
     { src: "/images/springbok_trio_mount_nobg.png", alt: "Springbok trio mount" },
     { src: "/images/caracal_mount_nobg.png", alt: "Caracal full mount" },
     { src: "/images/warthog_mount_nobg.png", alt: "Warthog shoulder mount" },
-    // Placeholders for future images
-    { src: null, alt: "Coming soon" },
-    { src: null, alt: "Coming soon" },
-    { src: null, alt: "Coming soon" },
-    { src: null, alt: "Coming soon" },
+
 ];
 
 const Gallery = () => {
