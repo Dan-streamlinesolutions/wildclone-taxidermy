@@ -96,8 +96,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     ],
     image: "/images/tanning_service.jpg",
     customGallery: [
-      "/images/tanning_process_1.jpg",
-      "/images/tanning_process_2.png",
       "/images/tanning_process_3.png",
       "/images/tanning_process_4.jpg",
       "/images/tanning_process_5.png",
@@ -157,7 +155,21 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Museum-quality finish using premium timbers",
     ],
     customGallery: [
-      "/images/woodworking_1.jpg",
+      "/images/wyldecraft/6 Seater poker table.png",
+      "/images/wyldecraft/6 seater poker table top cover.png",
+      "/images/wyldecraft/6 seater poker table top.png",
+      "/images/wyldecraft/8 seater Poker table 2.png",
+      "/images/wyldecraft/8 seater Poker table.png",
+      "/images/wyldecraft/Bedside table.png",
+      "/images/wyldecraft/Glass top coffee table 2.png",
+      "/images/wyldecraft/Glass top coffee table.png",
+      "/images/wyldecraft/Gun bag 2.png",
+      "/images/wyldecraft/Gun bag.png",
+      "/images/wyldecraft/Kudo horn side table.png",
+      "/images/wyldecraft/Mountain table 1.png",
+      "/images/wyldecraft/Mountain table 2.png",
+      "/images/wyldecraft/Slatted shelf 1.png",
+      "/images/wyldecraft/Slatted shelf 2.png",
     ]
   },
 };
@@ -227,21 +239,13 @@ const ServiceDetail = () => {
                 </div>
               </div>
 
-              {slug !== "professional-communication" && service.image && (
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.4 }}
-                  className="mt-6 aspect-video border border-border rounded-xl overflow-hidden"
-                >
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
-                </motion.div>
-              )}
+              {/* Removed individual image block to ensure tight gallery grouping */}
             </AnimatedSection>
           </div>
 
           {/* Custom Gallery Rendering */}
           {service.customGallery && service.customGallery.length > 0 && (
-            <div className={`mt-12 ${["tanning", "dip-pack", "leatherworks", "global-shipping"].includes(slug || "") ? "columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" : "flex flex-col gap-8"}`}>
+            <div className={`mt-12 ${["tanning", "dip-pack", "leatherworks", "global-shipping", "wyldecraft"].includes(slug || "") ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" : "flex flex-col gap-8"}`}>
               {service.customGallery.map((src, i) => (
                 <AnimatedSection key={i} delay={i * 0.1} scale className="break-inside-avoid">
                   <img src={src} className="w-full h-auto rounded-xl object-contain border border-border" alt={`${service.title} custom gallery image ${i + 1}`} />

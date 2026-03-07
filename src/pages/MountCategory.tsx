@@ -34,7 +34,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "Every shoulder mount includes hand-painted detail work, glass eyes selected for species accuracy, and custom-fitted ear liners for a natural, expressive result.",
-    images: ["/images/K33Pq9a36R5DDduBQ751wca4jk.png"],
+    images: ["/images/mount_shoulder.png"],
   },
   "custom-mounts": {
     title: "Custom / Full Mounts",
@@ -51,7 +51,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "Full mounts include habitat base options, custom lighting consultation, and white-glove delivery for oversized pieces.",
-    images: ["/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png"],
+    images: ["/images/mount_full.png"],
   },
   "european-mounts": {
     title: "European Mounts",
@@ -85,7 +85,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "Wall pedestals include a reinforced steel hanging system rated for the specific weight of your mount, ensuring safe and secure display.",
-    images: ["/images/vssE31UBI0lmPD0HAgfheuCQVio.png"],
+    images: ["/images/mount_wall_pedestal.png"],
   },
   "floor-pedestal": {
     title: "Floor Pedestal",
@@ -102,7 +102,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "Floor pedestals are finished with weighted bases for stability and come with optional habitat integration including rocks, grasses, and terrain elements.",
-    images: ["/images/vssE31UBI0lmPD0HAgfheuCQVio.png"],
+    images: ["/images/mount_floor_pedestal.png"],
   },
   "half-mounts": {
     title: "Half Mounts",
@@ -119,7 +119,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "Half mounts require reinforced wall brackets and structural assessment. Our team provides full installation guidance with every piece.",
-    images: ["/images/K33Pq9a36R5DDduBQ751wca4jk.png"],
+    images: ["/images/mount_half.png"],
   },
   "african-3d-shield": {
     title: "African 3D Shield",
@@ -136,7 +136,7 @@ const mountData: Record<string, MountData> = {
     ],
     finishingNote:
       "African 3D Shields are finished with hand-stitched leather edging and optional brass plaques engraved with hunt details, dates, and locations.",
-    images: ["/images/vFw6cbMbJtpWT5dpzB2jWFup5fk.png"],
+    images: ["/images/mount_3d.png"],
   },
 };
 
@@ -230,33 +230,6 @@ const MountCategory = () => {
                 </div>
               </div>
             </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section className="py-16 lg:py-24 bg-background border-t border-border">
-        <div className="container mx-auto px-6 lg:px-12">
-          <AnimatedSection>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-              Gallery
-            </h2>
-            <p className="font-body text-sm text-muted-foreground text-center max-w-lg mx-auto mb-12">
-              A selection of completed {data.title.toLowerCase()} from our studio.
-            </p>
-          </AnimatedSection>
-          <div className={data.images.length === 1 ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
-            {data.images.map((src, n) => (
-              <AnimatedSection key={n} delay={n * 0.08} scale className={data.images.length === 1 ? "w-full md:w-2/3 lg:w-1/2" : ""}>
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.4 }}
-                  className="aspect-[4/3] bg-white border border-border rounded-xl overflow-hidden cursor-pointer flex items-center justify-center p-8"
-                >
-                  <img src={src} alt={`${data.title} gallery ${n + 1}`} className="w-full h-full object-contain" />
-                </motion.div>
-              </AnimatedSection>
-            ))}
           </div>
         </div>
       </section>

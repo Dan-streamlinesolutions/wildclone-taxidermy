@@ -12,13 +12,13 @@ const mountTypes = [
         title: "Shoulder Mounts",
         slug: "shoulder-mounts",
         desc: "The timeless classic. A beautifully detailed presentation extending to the shoulder.",
-        image: "/images/K33Pq9a36R5DDduBQ751wca4jk.png",
+        image: "/images/mount_shoulder.png",
     },
     {
         title: "Custom / Full Mounts",
         slug: "custom-mounts",
         desc: "A stunning, lifelike full-body display, often paired with custom-built habitat bases.",
-        image: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png",
+        image: "/images/mount_full.png",
     },
     {
         title: "European Mounts",
@@ -30,25 +30,25 @@ const mountTypes = [
         title: "Wall Pedestal",
         slug: "wall-pedestal",
         desc: "Extending slightly from the wall, adding depth and dramatic presence.",
-        image: "/images/vssE31UBI0lmPD0HAgfheuCQVio.png",
+        image: "/images/mount_wall_pedestal.png",
     },
     {
         title: "Floor Pedestal",
         slug: "floor-pedestal",
         desc: "A freestanding centerpiece, bringing your trophy into the heart of the room.",
-        image: "/images/vssE31UBI0lmPD0HAgfheuCQVio.png",
+        image: "/images/mount_floor_pedestal.png",
     },
     {
         title: "Half Mounts",
         slug: "half-mounts",
         desc: "The perfect middle ground between a shoulder and full mount, showing powerful motion.",
-        image: "/images/K33Pq9a36R5DDduBQ751wca4jk.png",
+        image: "/images/mount_half.png",
     },
     {
         title: "African 3D Shield",
         slug: "african-3d-shield",
         desc: "A historic and bold display mapping horns onto custom-made African shields.",
-        image: "/images/vFw6cbMbJtpWT5dpzB2jWFup5fk.png",
+        image: "/images/mount_3d.png",
     },
 ];
 

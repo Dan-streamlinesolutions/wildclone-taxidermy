@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 const whyCards = [
   {
     title: "Professional Communication",
-    desc: "Real-time photo updates at every stage. You're kept informed from intake to delivery.",
+    desc: "We respect your investment. Our streamlined, high-capacity studio guarantees your finished trophies are ready within 12 months.",
     image: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png",
     href: "/services/professional-communication",
   },
@@ -22,12 +22,12 @@ const whyCards = [
   },
   {
     title: "Global Shipping",
-    desc: "Bringing your trophies to any corner of the globe with the same care and precision as in our studio.",
+    desc: "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio.",
     href: "/services/global-shipping",
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
   },
   {
-    title: "12-Month Turnaround Guarantee",
+    title: "12 Month Guarantee Turnaround Time",
     desc: "Committed to delivering your mount within 12 months of intake. No exceptions.",
     href: "/fulfilment-policy",
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
