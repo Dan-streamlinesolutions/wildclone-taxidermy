@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 const galleryImages = [
     { src: "/images/gallery/1.png", alt: "Mount 1" },
     { src: "/images/gallery/2.png", alt: "Mount 2" },
-    { src: "/images/gallery/3.png", alt: "Mount 3" },
     { src: "/images/gallery/4.png", alt: "Mount 4" },
     { src: "/images/gallery/5.png", alt: "Mount 5" },
     { src: "/images/gallery/6.png", alt: "Mount 6" },

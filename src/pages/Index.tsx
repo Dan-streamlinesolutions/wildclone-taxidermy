@@ -11,7 +11,7 @@ const whyCards = [
   {
     title: "Professional Communication",
     desc: "We respect your investment. Our streamlined, high-capacity studio guarantees your finished trophies are ready within 12 months.",
-    image: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png",
+    image: "/images/HH8GLs9hiwlxJTmnlCc9i0L2fXM-39ce814654dd8.png",
     href: "/services/professional-communication",
   },
   {
