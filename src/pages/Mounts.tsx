@@ -94,8 +94,8 @@ const Mounts = () => {
                                         className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-gray-medium transition-colors duration-500 flex flex-col h-full p-8"
                                     >
                                         <div className="flex flex-col flex-1">
-                                            <div className="w-full aspect-[4/3] bg-black rounded-xl mb-6 overflow-hidden flex items-center justify-center p-6">
-                                                <img src={mount.image} alt={mount.title} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                                            <div className="w-full aspect-[4/3] bg-black rounded-xl mb-6 overflow-hidden flex items-center justify-center p-12">
+                                                <img src={mount.image} alt={mount.title} className="w-full h-full object-contain hover:scale-110 transition-transform duration-500" />
                                             </div>
                                             <div className="flex items-center justify-between mb-4">
                                                 <h3 className="font-heading text-2xl font-semibold text-foreground">

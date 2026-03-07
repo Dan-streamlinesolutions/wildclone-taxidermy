@@ -254,7 +254,7 @@ const MountCategory = () => {
                     transition={{ duration: 0.3 }}
                     className="group bg-card border border-border rounded-xl overflow-hidden hover:border-gray-medium transition-colors duration-500"
                   >
-                    <div className="aspect-[16/10] overflow-hidden bg-black p-4 flex items-center justify-center">
+                    <div className="aspect-[16/10] overflow-hidden bg-black p-10 flex items-center justify-center">
                       <img src={mountData[s].images[0]} alt={mountData[s].title} className="w-full h-full object-contain" />
                     </div>
                     <div className="p-6 flex items-center justify-between">

@@ -12,7 +12,6 @@ const galleryImages = [
     { src: "/images/gallery/4.png", alt: "Mount 4" },
     { src: "/images/gallery/5.png", alt: "Mount 5" },
     { src: "/images/gallery/6.png", alt: "Mount 6" },
-    { src: "/images/gallery/7.png", alt: "Mount 7" },
     { src: "/images/gallery/8.png", alt: "Mount 8" },
     { src: "/images/gallery/9.png", alt: "Mount 9" },
     { src: "/images/gallery/10.png", alt: "Mount 10" },
