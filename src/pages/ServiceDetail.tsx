@@ -251,22 +251,6 @@ const ServiceDetail = () => {
             </AnimatedSection>
           </div>
 
-          {/* Left / Right Hero Placements */}
-          {service.leftImage && service.rightImage && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              <AnimatedSection direction="left">
-                <div className="aspect-[4/3] bg-black border border-border rounded-xl p-8 flex items-center justify-center">
-                  <img src={service.leftImage} alt={`${service.title} left feature`} className="w-full h-full object-contain" />
-                </div>
-              </AnimatedSection>
-              <AnimatedSection direction="right" delay={0.2}>
-                <div className="aspect-[4/3] bg-black border border-border rounded-xl p-8 flex items-center justify-center">
-                  <img src={service.rightImage} alt={`${service.title} right feature`} className="w-full h-full object-contain" />
-                </div>
-              </AnimatedSection>
-            </div>
-          )}
-
           {/* Custom Gallery Rendering */}
           {service.customGallery && service.customGallery.length > 0 && (
             <div className={`mt-12 ${slug === "wyldecraft" ? "columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" : ["tanning", "dip-pack", "leatherworks", "global-shipping"].includes(slug || "") ? `grid grid-cols-1 sm:grid-cols-2 ${service.customGallery.length === 3 ? "lg:grid-cols-3" : service.customGallery.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-4"} gap-6` : "flex flex-col gap-8"}`}>
@@ -308,8 +292,8 @@ const ServiceDetail = () => {
                     </ul>
                     <p className="mt-4 text-xs tracking-wide">Using a flat skin of your choice, this bespoke piece is fully customizable with various options for legs, wood stains and leather finishes.</p>
                   </div>
-                  <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
-                    <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                  <div className="aspect-[4/3] bg-black rounded-lg flex items-center justify-center border border-border mt-auto overflow-hidden">
+                    <img src={service.leftImage || "/images/wyldecraft/giraffe_table.png"} alt="Poker Table" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500 p-8" />
                   </div>
                 </div>
               </AnimatedSection>
@@ -328,8 +312,8 @@ const ServiceDetail = () => {
                       <p className="text-muted-foreground">Have a left over backskin? Our oak bedside tables are adorned with your skins that would otherwise go unused. They are a true celebration of the beauty of nature.</p>
                     </div>
                   </div>
-                  <div className="aspect-video bg-gray-dark/50 rounded-lg flex items-center justify-center border border-border mt-auto">
-                    <span className="font-body text-xs text-muted-foreground">Image Coming Soon</span>
+                  <div className="aspect-[4/3] bg-black rounded-lg flex items-center justify-center border border-border mt-auto overflow-hidden">
+                    <img src={service.rightImage || "/images/wyldecraft/kudu_table.png"} alt="Bespoke Tables" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500 p-8" />
                   </div>
                 </div>
               </AnimatedSection>
