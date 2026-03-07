@@ -9,10 +9,10 @@ import Footer from "@/components/Footer";
 
 const whyCards = [
   {
-    title: "12-Month\nDelivery",
+    title: "Professional Communication",
     desc: "We respect your investment. Our streamlined, high-capacity studio guarantees your finished trophies are ready within 12 months.",
     image: "/images/QWS9E07qeaf2sP2VkEWJZpb2ixY-9c8c79f8590188.png",
-    href: "/services",
+    href: "/services/professional-communication",
   },
   {
     title: "Expert Craftsmanship",
@@ -29,7 +29,7 @@ const whyCards = [
   {
     title: "Turnaround Time Guarantee",
     desc: "Committed to delivering your mount within 12 months of intake. No exceptions.",
-    href: "/services/turnaround-time-guarantee",
+    href: "/fulfilment-policy",
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
   },
 ];

@@ -28,15 +28,15 @@ const services = [
     external: false,
   },
   {
-    title: "Leatherworks",
+    title: "Leather Worx",
     desc: "Premium bespoke leather goods handcrafted to complement your trophies and lifestyle. From custom leather panels to decorative pieces, every item is made with care and precision.",
     href: "/services/leatherworks",
     external: false,
   },
   {
-    title: "Woodworking",
+    title: "Wyldecraft",
     desc: "Handcrafted woodwork to mount, frame, and showcase your trophies. Custom shields, plaques, habitat bases and display furniture, built to the highest standard.",
-    href: "/services/woodworking",
+    href: "/services/wyldecraft",
     external: false,
   },
 ];

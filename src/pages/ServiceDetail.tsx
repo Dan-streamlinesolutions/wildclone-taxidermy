@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 
 
-const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image: string; galleryImages?: string[]; customGallery?: string[] }> = {
+const serviceData: Record<string, { title: string; subtitle: string; description: string[]; highlights: string[]; image?: string; customGallery?: string[] }> = {
   "professional-communication": {
     title: "Professional Communication",
     subtitle: "Keeping you informed at every stage",
@@ -39,12 +39,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Museum-quality finishing and detail",
     ],
     image: "/images/029577_cd394e0a1be342418cc9b2e4a06302acmv2.jpg",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-    ],
   },
   "global-shipping": {
     title: "Global Shipping",
@@ -61,10 +55,12 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Export compliance expertise",
     ],
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
-    galleryImages: [
+    customGallery: [
       "/images/crate_DSC02598.jpg",
       "/images/crate_DSC02600.jpg",
+      "/images/crate_DSC02602.jpg",
       "/images/crate_DSC02603.jpg",
+      "/images/crate_DSC02604.jpg",
       "/images/crate_DSC02606.jpg",
     ],
   },
@@ -83,12 +79,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "On-time delivery track record",
     ],
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-    ],
   },
   "tanning": {
     title: "Tanning",
@@ -105,12 +95,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Suitable for mounting or display skins",
     ],
     image: "/images/tanning_service.jpg",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-    ],
     customGallery: [
       "/images/tanning_process_1.jpg",
       "/images/tanning_process_2.png",
@@ -134,19 +118,13 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Compliant with international import standards",
     ],
     image: "/images/029577_b33402f874b4491bb8d0373ee046a314mv2.jpg",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-    ],
     customGallery: [
       "/images/dip1.jpg",
       "/images/dip2.jpg",
     ]
   },
   "leatherworks": {
-    title: "Leatherworks",
+    title: "Leather Worx",
     subtitle: "Handcrafted leather goods for the outdoorsman",
     description: [
       "Our Leatherworks service offers premium, bespoke leather goods handcrafted by skilled artisans. Every piece is made to order, tailored to your specifications, and built to last a lifetime.",
@@ -159,21 +137,13 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Finest quality hides and materials",
       "Made-to-order, personalised service",
     ],
-    image: "/images/placeholder_image.png",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-    ],
     customGallery: [
       "/images/leatherworks_1.jpg",
       "/images/leatherworks_2.jpg",
-      "/images/leatherworks_3.jpg",
     ]
   },
-  "woodworking": {
-    title: "Woodworking",
+  "wyldecraft": {
+    title: "Wyldecraft",
     subtitle: "Custom woodcraft to showcase your trophies",
     description: [
       "Our Woodworking service produces handcrafted wooden pieces designed to complement and display your trophies. Every item is built to order by our skilled craftsmen using the finest local and imported timbers.",
@@ -185,13 +155,6 @@ const serviceData: Record<string, { title: string; subtitle: string; description
       "Handcrafted habitat bases for mounts",
       "Display furniture and bespoke frames",
       "Museum-quality finish using premium timbers",
-    ],
-    image: "/images/placeholder_image.png",
-    galleryImages: [
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
-      "/images/placeholder_image.png",
     ],
     customGallery: [
       "/images/woodworking_1.jpg",
@@ -264,7 +227,7 @@ const ServiceDetail = () => {
                 </div>
               </div>
 
-              {slug !== "professional-communication" && (
+              {slug !== "professional-communication" && service.image && (
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.4 }}
@@ -278,9 +241,9 @@ const ServiceDetail = () => {
 
           {/* Custom Gallery Rendering */}
           {service.customGallery && service.customGallery.length > 0 && (
-            <div className="mt-12 flex flex-col gap-8">
+            <div className={`mt-12 ${["tanning", "dip-pack", "leatherworks", "global-shipping"].includes(slug || "") ? "columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" : "flex flex-col gap-8"}`}>
               {service.customGallery.map((src, i) => (
-                <AnimatedSection key={i} delay={i * 0.1} scale>
+                <AnimatedSection key={i} delay={i * 0.1} scale className="break-inside-avoid">
                   <img src={src} className="w-full h-auto rounded-xl object-contain border border-border" alt={`${service.title} custom gallery image ${i + 1}`} />
                 </AnimatedSection>
               ))}
@@ -291,78 +254,10 @@ const ServiceDetail = () => {
 
 
 
-      {/* Global Shipping Crate Pricing */}
-      {slug === "global-shipping" && (
-        <section className="pt-16 pb-24 lg:pb-32 bg-background border-t border-border/40">
-          <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
-            <AnimatedSection>
-              <div className="text-center mb-16">
-                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Crate Sizing & Pricing</h2>
-                <p className="font-body text-sm text-muted-foreground max-w-2xl mx-auto">Simple. Secure. Stress Free. Typical export rates for USA, Canada, UK, and Europe.</p>
-              </div>
-            </AnimatedSection>
 
-            <AnimatedSection delay={0.1}>
-              <div className="overflow-x-auto bg-card border border-border rounded-xl">
-                <table className="w-full text-left border-collapse min-w-[800px]">
-                  <thead>
-                    <tr className="border-b border-border bg-gray-dark/50">
-                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">Crate Size</th>
-                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">USA & Canada</th>
-                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">UK & Europe</th>
-                      <th className="py-4 px-6 font-heading text-sm font-semibold text-foreground uppercase tracking-wider">Typical Content</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    <tr className="hover:bg-gray-dark/20 transition-colors">
-                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">800 x 550 x 550mm</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 780</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 730</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />2x Flat / Back Skins</td>
-                    </tr>
-                    <tr className="hover:bg-gray-dark/20 transition-colors">
-                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 800mm</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1950</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 1800</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />4x Flat / Back Skins<br />2x Shoulder Mounts</td>
-                    </tr>
-                    <tr className="hover:bg-gray-dark/20 transition-colors">
-                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1100mm</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2600</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2200</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">2x European Mounts<br />6x Flat / Back Skins<br />4x Shoulder Mounts</td>
-                    </tr>
-                    <tr className="hover:bg-gray-dark/20 transition-colors">
-                      <td className="py-4 px-6 font-body text-sm text-gray-light whitespace-nowrap">1100 x 1100 x 1600mm</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 3450</td>
-                      <td className="py-4 px-6 font-body text-sm text-foreground font-medium">$ 2800</td>
-                      <td className="py-4 px-6 font-body text-xs text-muted-foreground">6x European Mounts<br />8x Flat / Back Skins<br />6x Shoulder Mounts</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="mt-8 bg-gray-dark border border-border rounded-xl p-6 lg:p-8">
-                <h4 className="font-heading text-lg font-semibold text-foreground mb-4">Excluded in above crate prices per hunter:</h4>
-                <ul className="space-y-3 font-body text-sm text-gray-light">
-                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">Power of Attorney</span> <span className="text-foreground">$ 125</span></li>
-                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">Destination Bond and ISF Filing</span> <span className="text-foreground">$ 195</span></li>
-                  <li className="flex justify-between max-w-sm"><span className="text-muted-foreground">CITES Inspections</span> <span className="text-foreground">$ 120</span></li>
-                </ul>
-                <div className="mt-6 pt-6 border-t border-border/50 text-xs text-muted-foreground space-y-2">
-                  <p>* Taxes on import goods if applicable - Hunting trophies excluded from tax in USA.</p>
-                  <p>* Delivery to Door - Clients need to arrange last mile delivery from our warehouse to their premises.</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
-      )}
 
       {/* Wyldecraft Catalog */}
-      {slug === "wyldecraft-woodworking" && (
+      {slug === "wyldecraft" && (
         <section className="pt-16 pb-24 lg:pb-32 bg-background border-t border-border/40">
           <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
             <AnimatedSection>
