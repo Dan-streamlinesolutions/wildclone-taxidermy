@@ -44,15 +44,15 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     title: "Global Shipping",
     subtitle: "Delivering your trophies worldwide",
     description: [
-      "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio. Wild Clone handles every aspect of international trophy shipping.",
-      "We manage full CITES documentation, custom crating designed specifically for each mount, and coordinate with international shipping partners to ensure safe delivery to your door.",
-      "Our team has decades of experience navigating the complexities of international trophy export. From compliance documentation to custom packaging, we handle it all so you don't have to.",
+      "Wild Clone Taxidermy has a dedicated onsite global logistics company with 50+ offices around the world to ensure that when it's time for your trophies to start their journey home, it is done in the most efficient way possible.",
+      "30+ years of mastery ensure your trophies are in expert hands. Our vet-approved facilities ensure seamless imports and exports. Enjoy live tracking, low shipping costs, and guaranteed completion in 12 months or your money back.",
+      "The prices provided are per crate and includes all necessary documentation and fees associated with freight, clearance, export permits and applications. These prices apply only to shipments delivered to our nearest warehouse to you, as seen on the map, and do not include costs associated with onward shipping from our warehouse to your home address.",
     ],
     highlights: [
-      "Full CITES documentation management",
-      "Custom crating for every mount",
-      "Worldwide delivery to your door",
-      "Export compliance expertise",
+      "Dedicated onsite global logistics company",
+      "Live tracking & low shipping costs",
+      "Per-crate pricing includes all clearance & permits",
+      "Delivery to your nearest global warehouse",
     ],
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
     customGallery: [
