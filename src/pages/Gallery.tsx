@@ -11,7 +11,6 @@ const galleryImages = [
     { src: "/images/gallery/4.png", alt: "Mount 4" },
     { src: "/images/gallery/5.png", alt: "Mount 5" },
     { src: "/images/gallery/8.png", alt: "Mount 8" },
-    { src: "/images/gallery/24.png", alt: "Mount 24" },
     { src: "/images/gallery/25.png", alt: "Mount 25" },
     { src: "/images/gallery/26.png", alt: "Mount 26" },
     { src: "/images/gallery/27.png", alt: "Mount 27" },
@@ -21,7 +20,6 @@ const galleryImages = [
     { src: "/images/gallery/17.png", alt: "Mount 17" },
     { src: "/images/gallery/18.png", alt: "Mount 18" },
     { src: "/images/gallery/19.png", alt: "Mount 19" },
-    { src: "/images/gallery/20.png", alt: "Mount 20" },
     { src: "/images/gallery/21.png", alt: "Mount 21" },
     { src: "/images/gallery/22.png", alt: "Mount 22" },
 
