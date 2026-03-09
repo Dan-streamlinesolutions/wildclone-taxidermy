@@ -65,18 +65,16 @@ const serviceData: Record<string, { title: string; subtitle: string; description
     ],
   },
   "turnaround-time-guarantee": {
-    title: "Turnaround Time Guarantee",
+    title: "12-Month Mount Guarantee",
     subtitle: "12 months. No exceptions.",
     description: [
-      "We are committed to delivering your mount within 12 months of intake. No exceptions. This guarantee reflects our confidence in our team, our processes, and our capacity to deliver on time, every time.",
-      "Our streamlined workflow across four branches - Port Elizabeth, North West, Free State, and Limpopo - ensures efficient processing from intake through to final delivery.",
-      "We understand that waiting for your trophy is part of the anticipation, but we also know that timely delivery matters. That's why we've invested in facilities, training, and processes to honour our 12-month commitment.",
+      "Once your mount has been processed and accepted by our team, we guarantee delivery of your completed mount within 12 months. Our process prioritises craftsmanship and quality, ensuring every piece is finished to the highest standard."
     ],
     highlights: [
-      "12-month delivery guarantee",
-      "Streamlined multi-branch workflow",
-      "Regular progress updates throughout",
-      "On-time delivery track record",
+      "Your order is secured once processing is confirmed",
+      "Up to 12 months guaranteed turnaround after processing",
+      "Professional craftsmanship and quality control",
+      "Regular updates throughout the mounting process",
     ],
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
   },

@@ -29,7 +29,7 @@ const whyCards = [
   {
     title: "12 Month Guarantee Turnaround Time",
     desc: "Committed to delivering your mount within 12 months of intake. No exceptions.",
-    href: "/fulfilment-policy",
+    href: "/services/turnaround-time-guarantee",
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
   },
 ];
