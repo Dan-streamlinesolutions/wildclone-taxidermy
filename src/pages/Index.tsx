@@ -9,14 +9,16 @@ import Footer from "@/components/Footer";
 
 const whyCards = [
   {
-    title: "Professional Communication",
-    desc: "We respect your investment. Our streamlined, high-capacity studio guarantees your finished trophies are ready within 12 months.",
+    title: "Cutting Edge Communication",
+    desc: "[INSERT_CUTTING_EDGE_TEXT_HERE]",
     image: "/images/HH8GLs9hiwlxJTmnlCc9i0L2fXM-39ce814654dd8.png",
     href: "/services/professional-communication",
+    action: "Get a Quote",
+    actionHref: "/contact"
   },
   {
     title: "Expert Craftsmanship",
-    desc: "Our mounts are built by artisans who live and breathe the wild. Where precision, artistry, and respect for the animal come together in every detail.",
+    desc: "Our trophies are Crafted by artisans who live and breathe the wild. Where precision, artistry, and respect for the animal come together in every detail.",
     href: "/services",
     image: "/images/029577_cd394e0a1be342418cc9b2e4a06302acmv2.jpg",
   },
@@ -25,10 +27,12 @@ const whyCards = [
     desc: "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio.",
     href: "/services/global-shipping",
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
+    action: "Get a Quote",
+    actionHref: "/contact"
   },
   {
     title: "12 Month Guarantee Turnaround Time",
-    desc: "Committed to delivering your mount within 12 months of intake. No exceptions.",
+    desc: "Over 30+ years of mastery ensuring your trophies are in expert hands. We use vet-approved facilities for seamless imports and exports, navigating all permits and legal compliance with ease.",
     href: "/services/turnaround-time-guarantee",
     image: "/images/XW6ZqhR2B6gGRCwq9bnFr7ES8.jpg",
   },
@@ -93,9 +97,9 @@ const Index = () => {
             transition={{ duration: 1, delay: 0.6 }}
             className="font-body text-base md:text-lg text-gray-light max-w-2xl mx-auto leading-relaxed"
           >
-            Preserve your trophy forever with craftsmanship, technology, and care.
+            Craftsmanship that will capture the moment for a lifetime.
             <br />
-            <span className="text-foreground font-semibold">Guaranteed 12-Month Delivery.</span> Trusted by hunters worldwide.
+            <span className="text-foreground font-semibold">Trusted by hunters worldwide.</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -140,7 +144,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <AnimatedSection>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-center mb-6">
-              Why Hunters Choose Wild Clone
+              What Makes Us Different
             </h2>
             <p className="font-body text-sm text-muted-foreground text-center max-w-2xl mx-auto mb-16">
               From expert artisans to worldwide delivery, every step of our process is designed to exceed your expectations.
@@ -157,9 +161,22 @@ const Index = () => {
                     <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground mb-4 text-center min-h-[64px] flex items-center justify-center">
                       {card.title}
                     </h3>
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed text-center mb-6 flex-grow">
+                    <p className="font-body text-sm text-muted-foreground leading-relaxed text-center mb-6">
                       {card.desc}
                     </p>
+
+                    {card.action && card.actionHref && (
+                      <div className="flex justify-center mb-6">
+                        <Link
+                          to={card.actionHref}
+                          className="font-body text-xs font-semibold px-6 py-2.5 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300"
+                          onClick={(e) => e.stopPropagation()} // Prevent card link trigger
+                        >
+                          {card.action}
+                        </Link>
+                      </div>
+                    )}
+
                     <div className="mt-auto aspect-square rounded-lg overflow-hidden">
                       <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
                     </div>
@@ -177,7 +194,7 @@ const Index = () => {
           <AnimatedSection>
             <div className="max-w-5xl mx-auto text-center">
               <p className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-                Our team of industry-leading craftsmen and craftswomen transform your trophy into a lifelike masterpiece using precision, technology, and respect for the animal.
+                At Wild Clone we are passionate about exceeding expectations, we have built and continue to build a team of craftsmen & women who know and understand how important it is to 'Capture the Moment' on that once-in-a-lifetime animal.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}

@@ -4,15 +4,7 @@ import CTABanner from "@/components/CTABanner";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const policyItems = [
-  "It is the responsibility of the client to ensure that trophies are subjected to field preparation to acceptable standards.",
-  "All Taxidermy work requires a 50% deposit before any work will commence, and the balance is due on completion of the trophies, before collection or shipping.",
-  "Please note that no items will be exchanged or refunded. All goods not collected or final payment received, 3 months after completion will be sold to recoup costs.",
-  "All goods remain the property of Wild Clone Taxidermy until fully paid. Wild Clone Taxidermy shall be entitled to sell such goods to cover the outstanding amount owed.",
-  "Prices do not include VAT, Packaging, Transport, Admin, Documentation Fees & Crating, neither delivery nor postage.",
-  "Work done is at the owner's risk. We are not responsible for any loss or damage to goods due to power or refrigeration failure, fire, strike, theft or act of God.",
-  "Although great care is taken, we indemnify ourselves against hair slip and bacterial defects or damage which may occur.",
-  "Products will be completed within 12 months from deposit payment received.",
-  "Products will either be shipped via ocean or air, although great care is taken when preparing trophies for shipping, Wild Clone Taxidermy is not responsible for damage caused by freight forwarders or last-mile logistics providers.",
+  "Work will commence upon receipt of a 50% deposit and completed mounting instructions. Mounting instructions are discussed and confirmed on an onboarding call. The client relationship begins once the deposit has been received."
 ];
 
 const FulfillmentPolicy = () => {

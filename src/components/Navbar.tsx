@@ -6,11 +6,19 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Mounting", path: "/mounts" },
   { label: "Mounting Direction", path: "/mounting-direction" },
   { label: "Gallery", path: "/gallery" },
-  { label: "Services", path: "/services" },
-  { label: "Blog", path: "/blog" },
+  {
+    label: "Services",
+    path: "/services",
+    dropdown: [
+      { label: "Mounting", path: "/mounts" },
+      { label: "Tanning", path: "/services/tanning" },
+      { label: "Dip & Pack", path: "/services/dip-pack" },
+      { label: "Leather Worx", path: "/services/leatherworks" },
+      { label: "Wyldecraft", path: "/services/wyldecraft" }
+    ]
+  },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -53,14 +61,30 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className={`hidden xl:flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out w-max ${scrolled ? "gap-6" : "gap-10 2xl:gap-14"}`}>
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`font-body text-sm text-foreground/80 hover:text-foreground transition-colors duration-300 whitespace-nowrap ${location.pathname === link.path ? "text-foreground" : ""
-                  }`}
-              >
-                {link.label}
-              </Link>
+              <div key={link.path} className="relative group">
+                <Link
+                  to={link.path}
+                  className={`font-body text-sm text-foreground/80 hover:text-foreground transition-colors duration-300 whitespace-nowrap flex items-center gap-1 py-4 ${location.pathname === link.path ? "text-foreground" : ""
+                    }`}
+                >
+                  {link.label}
+                </Link>
+                {link.dropdown && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="bg-card border border-border rounded-xl shadow-xl overflow-hidden min-w-[200px] flex flex-col">
+                      {link.dropdown.map((sublink) => (
+                        <Link
+                          key={sublink.path}
+                          to={sublink.path}
+                          className="font-body text-sm text-muted-foreground px-6 py-3 hover:bg-secondary hover:text-foreground transition-colors"
+                        >
+                          {sublink.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -112,9 +136,29 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08, duration: 0.4 }}
                 >
-                  <Link to={link.path} className="font-heading text-4xl text-foreground hover:opacity-60 transition-opacity">
-                    {link.label}
-                  </Link>
+                  {link.dropdown ? (
+                    <div className="flex flex-col items-center gap-4">
+                      <Link to={link.path} onClick={() => setMobileOpen(false)} className="font-heading text-4xl text-foreground hover:opacity-60 transition-opacity">
+                        {link.label}
+                      </Link>
+                      <div className="flex flex-col items-center gap-3 bg-secondary/30 px-8 py-4 rounded-xl border border-border/10">
+                        {link.dropdown.map((sublink) => (
+                          <Link
+                            key={sublink.path}
+                            to={sublink.path}
+                            onClick={() => setMobileOpen(false)}
+                            className="font-heading text-xl text-muted-foreground hover:text-foreground transition-colors"
+                          >
+                            {sublink.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link to={link.path} onClick={() => setMobileOpen(false)} className="font-heading text-4xl text-foreground hover:opacity-60 transition-opacity">
+                      {link.label}
+                    </Link>
+                  )}
                 </motion.div>
               ))}
               <motion.a

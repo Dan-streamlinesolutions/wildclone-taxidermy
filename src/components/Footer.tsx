@@ -61,7 +61,7 @@ const Footer = () => {
 
       <div className="border-t border-border py-6">
         <p className="text-center font-body text-xs text-gray-medium">
-          © 2025 Wild Clone Taxidermy. Built by Streamline Digital Solutions.
+          © 2025 Wild Clone Taxidermy. All rights reserved.
         </p>
       </div>
     </motion.footer>
