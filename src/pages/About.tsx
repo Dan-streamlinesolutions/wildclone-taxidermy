@@ -22,7 +22,7 @@ const About = () => {
 
       <section ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ scale: heroScale, opacity: heroOpacity, y: heroY }} className="absolute inset-0">
-          <img src="/images/aboutsection.jpg" alt="Wild Clone Studio" className="w-full h-full object-cover" />
+          <img src="/images/DSC02614.jpg" alt="Wild Clone Studio" className="w-full h-full object-cover" />
         </motion.div>
         <div className="absolute inset-0 bg-background/40" />
         <motion.div
