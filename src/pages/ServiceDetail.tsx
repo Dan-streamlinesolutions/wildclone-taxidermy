@@ -42,19 +42,19 @@ const serviceData: Record<string, { title: string; subtitle: string; description
   },
   "global-shipping": {
     title: "Global Shipping",
-    subtitle: "Delivering your trophies worldwide",
+    subtitle: "Safe, secure, and fully compliant international delivery",
     description: [
-      "Wild Clone Taxidermy has a dedicated onsite global logistics company with 50+ offices around the world to ensure that when it's time for your trophies to start their journey home, it is done in the most efficient way possible.",
-      "30+ years of mastery ensure your trophies are in expert hands. Our vet-approved facilities ensure seamless imports and exports. Enjoy live tracking, low shipping costs, and guaranteed completion in 12 months or your money back.",
-      "The prices provided are per crate and includes all necessary documentation and fees associated with freight, clearance, export permits and applications. These prices apply only to shipments delivered to our nearest warehouse to you, as seen on the map, and do not include costs associated with onward shipping from our warehouse to your home address.",
+      "Getting your trophy home safely is just as important as the taxidermy process itself. Wild Clone provides comprehensive global shipping services, handling all the complex logistics, crating, and export documentation required for international transport.",
+      "We build custom, export-certified wooden crates tailored to the exact dimensions of your mounts, ensuring maximum protection during transit while minimizing dimensional weight costs.",
+      "Our team works directly with trusted international freight forwarders and customs brokers to navigate the maze of permits, wildlife declarations, and import/export regulations, so you don't have to.",
     ],
     highlights: [
-      "Dedicated onsite global logistics company",
-      "Live tracking & low shipping costs",
-      "Per-crate pricing includes all clearance & permits",
-      "Delivery to your nearest global warehouse",
+      "Custom, export-certified crating",
+      "All export permits and documentation handled",
+      "Partnerships with trusted international freight forwarders",
+      "Door-to-door or nearest-port delivery options",
     ],
-    image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
+    image: "/images/truck.png",
     customGallery: [
       "/images/crate_DSC02598.jpg",
       "/images/crate_DSC02600.jpg",
