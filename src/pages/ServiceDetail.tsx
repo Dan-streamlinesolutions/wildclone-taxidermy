@@ -222,6 +222,16 @@ const ServiceDetail = () => {
                   <p key={i}>{para}</p>
                 ))}
               </div>
+              {["professional-communication", "global-shipping"].includes(slug || "") && (
+                <div className="mt-8">
+                  <Link
+                    to="/contact"
+                    className="inline-block font-body text-sm font-semibold px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300"
+                  >
+                    Get a Quote
+                  </Link>
+                </div>
+              )}
             </AnimatedSection>
 
             <AnimatedSection delay={0.2} direction="right">

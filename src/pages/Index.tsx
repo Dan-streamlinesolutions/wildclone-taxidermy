@@ -10,11 +10,9 @@ import Footer from "@/components/Footer";
 const whyCards = [
   {
     title: "Cutting Edge Communication",
-    desc: "[INSERT_CUTTING_EDGE_TEXT_HERE]",
+    desc: "At Wild Clone, communication is at the heart of everything we do. We believe that every client deserves to be kept informed throughout the entire taxidermy process - from the moment your trophy arrives at our facility to the day it's shipped to your door.",
     image: "/images/HH8GLs9hiwlxJTmnlCc9i0L2fXM-39ce814654dd8.png",
     href: "/services/professional-communication",
-    action: "Get a Quote",
-    actionHref: "/contact"
   },
   {
     title: "Expert Craftsmanship",
@@ -27,8 +25,6 @@ const whyCards = [
     desc: "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio.",
     href: "/services/global-shipping",
     image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
-    action: "Get a Quote",
-    actionHref: "/contact"
   },
   {
     title: "12 Month Guarantee Turnaround Time",
@@ -111,7 +107,7 @@ const Index = () => {
               to="/contact"
               className="font-body text-sm px-8 py-4 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300 w-full sm:w-52 text-center"
             >
-              Get a Quote
+              Contact Us
             </Link>
             <Link
               to="/gallery"
@@ -161,21 +157,9 @@ const Index = () => {
                     <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground mb-4 text-center min-h-[64px] flex items-center justify-center">
                       {card.title}
                     </h3>
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed text-center mb-6">
+                    <p className="font-body text-sm text-muted-foreground leading-relaxed text-center mb-6 flex-grow">
                       {card.desc}
                     </p>
-
-                    {card.action && card.actionHref && (
-                      <div className="flex justify-center mb-6">
-                        <Link
-                          to={card.actionHref}
-                          className="font-body text-xs font-semibold px-6 py-2.5 bg-foreground text-background hover:bg-background hover:text-foreground border border-foreground rounded transition-all duration-300"
-                          onClick={(e) => e.stopPropagation()} // Prevent card link trigger
-                        >
-                          {card.action}
-                        </Link>
-                      </div>
-                    )}
 
                     <div className="mt-auto aspect-square rounded-lg overflow-hidden">
                       <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />

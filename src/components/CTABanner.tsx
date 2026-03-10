@@ -32,7 +32,7 @@ const CTABanner = () => {
   return (
     <motion.section layout transition={{ type: "spring", stiffness: 200, damping: 25 }} ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src="/images/029577_a71f122453564c86bfe94d3e276e26bemv2.jpg" alt="Shipping crates" className="w-full h-full object-cover" />
+        <img src="/images/cta_bg_new.jpg" alt="Wild Clone Showroom" className="w-full h-full object-cover" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
 
