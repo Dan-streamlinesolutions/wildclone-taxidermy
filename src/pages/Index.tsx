@@ -24,7 +24,7 @@ const whyCards = [
     title: "Global Shipping",
     desc: "Bringing your trophies to any corner of the globe, with the same care, precision, and craftsmanship as in our studio.",
     href: "/services/global-shipping",
-    image: "/images/23FVknLJGGuivl7ZZLQFdiXZFbI.jpg",
+    image: "/images/truck.png",
   },
   {
     title: "12 Month Guarantee Turnaround Time",
@@ -72,30 +72,35 @@ const Index = () => {
         {/* Bottom gradient fade into page background */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-background" />
+        {/* Transparent Wildclone Logo Background */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none z-0">
+          <img src="/images/Wild Clone.png" alt="Wild Clone Logo Overlay" className="w-[80%] max-w-4xl object-contain mix-blend-overlay" />
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", stiffness: 40, damping: 20, mass: 1, delay: 0.2, filter: { duration: 0.4 } }}
           style={{ y: heroY }}
-          className="relative z-10 text-center px-6 max-w-4xl"
+          className="relative z-10 text-center px-6 max-w-5xl"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tight"
+            className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight leading-tight"
           >
-            Wild Clone{"\n"}Taxidermy
+            12-Month Taxidermy Completion <br className="md:hidden" />
+            <span className="block md:inline">| Trusted by hunters worldwide</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="font-body text-base md:text-lg text-gray-light max-w-2xl mx-auto leading-relaxed"
+            className="font-body text-base md:text-xl text-gray-light max-w-3xl mx-auto leading-relaxed"
           >
+            <strong className="text-foreground">Capture the Moment.</strong><br />
             Craftsmanship that will capture the moment for a lifetime.
-            <br />
-            <span className="text-foreground font-semibold">Trusted by hunters worldwide.</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -113,7 +118,7 @@ const Index = () => {
               to="/gallery"
               className="font-body text-sm px-8 py-4 bg-transparent text-foreground border border-foreground rounded hover:bg-foreground hover:text-background transition-all duration-300 w-full sm:w-52 text-center"
             >
-              View Our Mounts
+              Outfitter Portal
             </Link>
           </motion.div>
         </motion.div>
